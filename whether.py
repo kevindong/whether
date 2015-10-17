@@ -9,6 +9,7 @@ os.system("gpio mode 1 out")
 # =================
 # Grabbing data
 # =================
+'''
 print("Opening file to be written to...")
 original = open('West_Lafayette.json', 'w')
 print("Accessing .json file...")
@@ -18,6 +19,7 @@ original.write(page.text)
 print(page.text)
 print("Closing file that got written to...")
 original.close()
+'''
 
 # =================
 # Times of interest
@@ -83,10 +85,10 @@ broken = False
 counter = 0
 total = 0
 for hour in schedule_list[target]:
-	#print("hour: " + str(hour))
-	#print("modifier: " + str(modifier))
-	#print("accessed index: " + str(hour - modifier))
-	#print("pop: " + original_data["hourly_forecast"][hour - modifier]["pop"])
+	print("hour: " + str(hour))
+	print("modifier: " + str(modifier))
+	print("accessed index: " + str(hour - modifier))
+	print("pop: " + original_data["hourly_forecast"][hour - modifier]["pop"])
 	if (modifier > hour or hour < 0 or hour > 23):
 		pass
 	else:

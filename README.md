@@ -26,5 +26,8 @@ This repository includes West Lafayette, IN as an example. It is safe to edit ev
 
 ----------
 
+### Credits
+All data is sourced from [Weather Underground](http://www.wunderground.com). Powered by Weather Underground. 
+
 ### License
 All rights reserved.

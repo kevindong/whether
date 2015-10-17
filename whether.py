@@ -20,6 +20,7 @@ while True:
 	# =================
 	# Grabbing data
 	# =================
+	'''
 	print("Opening file to be written to...")
 	original = open('West_Lafayette.json', 'w')
 	print("Accessing .json file...")
@@ -29,6 +30,7 @@ while True:
 	print(page.text)
 	print("Closing file that got written to...")
 	original.close()
+	'''
 
 	# =================
 	# Times of interest
@@ -125,12 +127,16 @@ while True:
 		print("modifier: " + str(modifier))
 		print("accessed index: " + str(hour - modifier))
 		print("feelslike [english]: " + original_data["hourly_forecast"][hour - modifier]["feelslike"]["english"])
+		print(modifier > hour)
+		print(hour < 0)
+		print(hour > 23)
 		if (modifier > hour or hour < 0 or hour > 23):
 			pass
 		else:
+			print("else")
 			total += int(original_data["hourly_forecast"][hour - modifier]["feelslike"]["english"])
 			counter += 1
-			if (int(original_data["hourly_forecast"][hour - modifier]["feelslike"]["english"]) >= 50):
+			if (int(original_data["hourly_forecast"][hour - modifier]["feelslike"]["english"]) <= 50):
 				tempIndicator = True
 				break
 		print("\n")

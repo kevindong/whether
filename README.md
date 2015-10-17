@@ -22,7 +22,7 @@ Most weather apps will give you pretty much everything you need to know about to
 ```
 
 ### Included Examples/Tests
-This repository includes West Lafayette, IN as an example. It is safe to edit every file in this repository except for `whether.py`.
+This repository includes West Lafayette, IN as an example. It is safe to edit every file in this repository except for `whether.py`. `light-test.py` checks to make sure that Python programs can actually turn the lights on and off.
 
 ----------
 

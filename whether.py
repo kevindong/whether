@@ -5,10 +5,12 @@ import time # For forcing the program to sleep
 
 os.system("gpio mode 0 out") # Initializes the LED lights for use
 os.system("gpio mode 1 out")
+os.system("gpio mode 2 out")
 
 while True: # This program is intended to be an infinite loop.
-	os.system("gpio write 0 0") # Ensures that the lights are off to start out
-	os.system("gpio write 1 0")
+	os.system("gpio write 0 0") # Ensures that the lights are off to start out; precipitation
+	os.system("gpio write 1 0") # Sweater sweater
+	os.system("gpio write 2 0") # Status
 	
 	# =================
 	# Getting location
@@ -128,5 +130,7 @@ while True: # This program is intended to be an infinite loop.
 	if (tempIndicator == True): # Checks to see if the sweather weather notification light needs to be turned on
 		print("tempIndicator invoked")
 		os.system("gpio write 1 1") # Turns light on
+	if (!preIndicator and !tempIndicator): # If neither of the other two lights are on, this status light comes on.
+		os.system("gpio write 2 1") # Turns light on
 	print("\nPowered by Weather Underground.")
 	time.sleep(3600) # Sleeps for 3,600 seconds (= 1 hour) and then reruns the entire program

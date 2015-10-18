@@ -130,7 +130,7 @@ while True: # This program is intended to be an infinite loop.
 	if (tempIndicator == True): # Checks to see if the sweather weather notification light needs to be turned on
 		print("tempIndicator invoked")
 		os.system("gpio write 1 1") # Turns light on
-	if (!preIndicator and !tempIndicator): # If neither of the other two lights are on, this status light comes on.
+	if (preIndicator == False and tempIndicator == False): # If neither of the other two lights are on, this status light comes on.
 		os.system("gpio write 2 1") # Turns light on
 	print("\nPowered by Weather Underground.")
 	time.sleep(3600) # Sleeps for 3,600 seconds (= 1 hour) and then reruns the entire program

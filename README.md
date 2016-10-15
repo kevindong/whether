@@ -3,7 +3,7 @@
 ### Description
 This project uses a Raspberry Pi, two LED lights, and a breadboard. 
 
-Most weather apps will give you pretty much everything you need to know about today's weather. But, they also overload you with information. You don't actually care if it rains when you're not outside. Most people are only going to care about the weather when they're outside (for white colllar workers, this would be something like 8-9am and 5-6pm). This program simply takes in your schedule and location and compares it against the weather data for the current day. If you indicate that you're going to be outside at a certain time and it's reasonably likely that it'll rain at that time, the umbrella indicator light will come on. Likewise, there's a sweater weather light.
+Most weather apps will give you pretty much everything you need to know about today's weather. But, they also overload you with information. You don't actually care if it rains when you're not outside. Most people are only going to care about the weather when they're outside (for white collar workers, this would be something like 8-9am and 5-6pm). This program simply takes in your schedule and location and compares it against the weather data for the current day. If you indicate that you're going to be outside at a certain time and it's reasonably likely that it'll rain at that time, the umbrella indicator light will come on. Likewise, there's a sweater weather light.
 
 ### Instructions
 
